@@ -1,0 +1,73 @@
+.modal-main-logo {
+    @include max-mq ($mb) {
+        padding-top: 7px;
+    }
+    @include max-mq ($ip) {
+        max-width: 220px;
+        width: 100%;
+    }
+}
+#modal-custom-style {
+    .modal-header {
+        border-bottom: none;
+        padding-top: 0;
+    }
+}
+.modal-logo-img-close-wrap {
+    padding-bottom: 0;
+    padding-top: 6.4vh;
+    @include min-mq ($fhd + 100) {
+        padding-top: 10vh;
+    }
+    @include max-mq ($mac) {
+        padding-top: 3vh;
+    }
+    @include max-mq ($mb) {
+        padding-top: 22px;
+    }
+}
+.modal-title {
+    background-position: 100% 0;
+    font-size: $font-size-h1;
+    font-weight: $font-weight-l;
+    padding-left: 84px;
+    padding-right: 84px;
+    padding-top: 30px;
+    text-align: center;
+    @include max-mq ($mac) {
+        font-size: $font-size-h1 - 1;
+    }
+    @include max-mq ($mac) {
+        font-size: $font-size-h1 - 1.6;
+    }
+    @include max-mq ($mb) {
+        font-size: $font-size-h1 - 1.95;
+        background-size: 15%;
+        background-position: 93% 3px;
+
+    }
+    @include max-mq ($mbs) {
+        font-size: $font-size-h1 - 2.15;
+        background-image: none !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @include max-mq ($ip) {
+        font-size: $font-size-h1 - 2.8;
+    }
+    strong {
+        font-weight: $font-weight-b;
+    }
+}
+.modal-offer-title {
+    font-size: $font-size-h3;
+    color: $primary-color;
+    letter-spacing: 0;
+    line-height: 1.4;
+    @include max-mq ($mac) {
+        font-size: $font-size-h3 - 0.29;
+    }
+    @include max-mq ($mbs) {
+        font-size: $font-size-h3 - 0.55;
+    }
+}

@@ -1,0 +1,35 @@
+#modal-custom-style {
+    .btn {
+        @include transition-all
+    }
+    .btn-close {
+        align-items: center;
+        background-color: rgba($color: $white, $alpha: 0.29);
+        border-radius: 50%;
+        border: 1px solid $white;
+        color: $white;
+        display: flex;
+        filter: brightness(0) invert(1);
+        height: 37px;
+        opacity: 1;
+        justify-content: center;
+        padding: 0;
+        width: 37px;
+        @include transition-all;
+        &:hover {
+            box-shadow: 0 0 0 0.25rem rgba($color: $white, $alpha: 0.29);
+        }
+    }
+    .button-secondary {
+        background-color: $secondary-color;
+        border: 1px solid $secondary-color;
+        color: $white;
+        font-size: $font-size-large - 0.025;
+        font-weight: $font-weight-b;
+        padding: 10px;
+        &:hover {
+            background-color: $white;
+            color: $secondary-color;
+        }
+    }
+}

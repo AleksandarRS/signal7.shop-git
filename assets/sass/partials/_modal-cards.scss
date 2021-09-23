@@ -1,0 +1,224 @@
+.modal-content {
+    @include max-mq ($lg) {
+        background-position: center top;
+    }
+}
+.modal-content-area {
+    padding-top: 15px;
+    @include max-mq ($ipad) {
+        padding-top: 0;
+    }
+}
+.modal-offer-card-item {
+    @include max-mq ($md) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-bottom: 30px;
+    }
+}
+.modal-offer-card-item-inner {
+    background-color: rgba($color: $white, $alpha: 0.5);
+    border-radius: 10px;
+    border: 2px solid $white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 61%;
+    padding-top: 15px;
+    position: relative;
+    @include after-bg-grad;
+    @include max-mq ($mac) {
+        max-width: 65%;
+    }
+    @include max-mq ($lg) {
+        max-width: 75%;
+    }
+    @include max-mq ($md) {
+        max-width: 60%;
+    }
+    @include max-mq ($mb) {
+        max-width: 75%;
+    }
+    @include max-mq ($ip) {
+        max-width: 82%;
+    }
+    @include max-mq ($ip - 20) {
+        max-width: 90%;
+    }
+    &:after {
+        filter: brightness(0.95) blur(3px);
+        background-color: rgba($color: $white, $alpha: 0.78);
+    }
+    > div {
+        position: relative;
+        z-index: 1;
+    }
+    .modal-offer-card-price-image-details {
+        background-color: rgba($color: $white, $alpha: 0.5);
+        border-radius: 10px;
+        border: 2px solid $white;
+        margin-left: -7%;
+        margin-right: -7%;
+        padding: 26px 46px 34px;
+        position: relative;
+        width: 114%;
+        @include after-bg-grad;
+        @include max-mq ($mac) {
+            padding: 17px 37px 18px;
+        }
+        @include max-mq ($mbs) {
+            padding: 9px 21px 12px;
+            flex-wrap: wrap;
+            justify-content: center !important;
+            align-items: center;
+        }
+        &:after {
+            background-color: red;
+            filter: brightness(0.95) blur(3px);
+            background-color: rgba($color: $white, $alpha: 0.78);
+        }
+        > div {
+            position: relative;
+            z-index: 1;
+        }
+        .offer-image-wrap {
+            margin-right: -130px;
+            @include max-mq ($lg) {
+                margin-right: -90px;
+            }
+            @include max-mq ($ipad + 20) {
+                margin-right: -80px;
+            }
+            @include max-mq ($md) {
+                margin-right: -130px;
+            }
+            @include max-mq ($mb) {
+                margin-right: -80px;
+            }
+            @include max-mq ($mbs) {
+                margin-right: 0;
+                order: 0;
+                padding-bottom: 5px;
+                padding-top: 10px;
+                text-align: center;
+            }
+        }
+    }
+    .offer-price-text-description-wrap {
+        @include max-mq ($mbs) {
+            order: 1;
+        }
+    }
+    .offer-title-header,
+    .modal-offer-button-wrapper {
+        padding-left: 47px;
+        padding-right: 47px;
+        @include max-mq ($mac) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        @include max-mq ($mbs) {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+    .offer-title-header {
+        align-items: flex-end;
+        display: flex;
+    }
+    .rebate-details-wrap,
+    .offer-price-text-description-wrap {
+        > div {
+            > span {
+                color: $grey-200;
+                font-size: $font-size-small;
+                font-weight: $font-weight-m;
+                text-transform: uppercase;
+            }
+        }
+    }
+    
+    .price-details {
+        padding-bottom: 15px;
+        p {
+            color: $secondary-color;
+            font-size: $font-size-h2;
+            font-weight: $font-weight-b;
+            line-height: 1;
+            margin-bottom: 0;
+            @include max-mq ($ipad + 20) {
+                font-size: $font-size-h2 - 0.3;
+            }
+            @include max-mq ($mbs) {
+                font-size: $font-size-h2 - 0.55;
+            }
+        }
+        .sales-price {
+            color: $primary-color;
+            font-size: 20px;
+            font-weight: $font-weight-l;
+            margin-left: 11px;
+            margin-top: 6px;
+            position: relative;
+            vertical-align: top;
+            @include after-bg-grad;
+            &:after {
+                background-color: $primary-color;
+                height: 1px;
+                margin: auto;
+                width: 100%;
+            }
+        }
+    }
+    .rebate-details {
+        background-color: $tertiary-100;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 3px 0;
+        padding: 4px 5px 10px 5px;
+        p {
+            color: $white;
+            font-size: 25px;
+            font-weight: $font-weight-b;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+    }
+    .rebate-details-wrap {
+        min-height: 63px;
+        &.empty {
+            @include max-mq ($md) {
+                display: none;
+            }
+        }
+        
+    }
+    .modal-offer-button-wrapper {
+        padding: 15px;
+        max-width: 86%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        .btn {
+            width: 100%;
+            border-radius: 30px;
+
+        }
+    }
+    .offer-text-description {
+        font-weight: $font-weight-l;
+        padding-top: 6px;
+        p {
+            font-size: 1.25em;
+            font-weight: $font-weight-l;
+            letter-spacing: 0;
+            margin-bottom: 0.2em;
+            @include max-mq ($ipad + 20) {
+                font-size: 1.1em;
+            }
+        }
+    }
+
+}

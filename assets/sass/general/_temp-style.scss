@@ -1,0 +1,38 @@
+.btn {
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-checkout-primary {
+    background-color: #6610f2;
+    font-weight: 600;
+}
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+    pointer-events: none;
+    opacity: .65;
+}
+.btn-xl {
+    padding: 1rem 1rem;
+}
+.text-white {
+    color: $white;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.lh-sm {
+    line-height: 1.25;
+}
+.fw-semi {
+    font-weight: $font-weight-b;
+    
+}

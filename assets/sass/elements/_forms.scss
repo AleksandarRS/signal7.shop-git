@@ -1,0 +1,106 @@
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+textarea {
+  background-color: $grey-50;
+  border: 1px solid $grey-100;
+  border-radius: 10px;
+  font-size: $font-size-base !important;
+  line-height: 1em;
+  padding: 15px 18px;
+  vertical-align: middle;
+  height: 51px !important;
+
+}
+
+textarea {
+  resize: none;
+  padding-left: .6em;
+  width: 100%;
+  height: auto !important;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  border: 1px solid $grey-100;
+  border-radius: 10px;
+  font-family: $primary-font;
+  font-size: $font-size-base;
+  line-height: 1.15em;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+select {
+  border: 1px solid $grey-100;
+  border-radius: 10px;
+  height: 51px !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show > .btn-primary.dropdown-toggle {
+    background-color: $secondary-color;
+}
+
+
+/*---- Placeholder ----*/
+::-webkit-input-placeholder {
+  color: $primary-color !important;
+  opacity: 1;
+  font-family: $primary-font;
+}
+\:-moz-placeholder {
+  color: $primary-color !important;
+  opacity: 1;
+  font-family: $primary-font;
+}
+::-moz-placeholder {
+  color: $primary-color !important;
+  opacity: 1;
+  font-family: $primary-font;
+}
+\:-ms-input-placeholder {
+  color: $primary-color !important;
+  opacity: 1;
+  font-family: $primary-font;
+}
+*::-webkit-input-placeholder {
+  color: $primary-color !important;
+  opacity: 1;
+  font-family: $primary-font;
+}
+*:-moz-placeholder {
+  color: $primary-color !important;
+  opacity: 1;
+  font-family: $primary-font;
+}
+*:-ms-input-placeholder {
+  color: $primary-color !important;
+  opacity: 1;
+  font-family: $primary-font;
+}
+
+fieldset {
+    min-width: 0;
+}
