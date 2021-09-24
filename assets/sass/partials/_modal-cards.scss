@@ -10,6 +10,7 @@
     }
 }
 .modal-offer-card-item {
+    display: flex;
     @include max-mq ($md) {
         flex: 0 0 100%;
         max-width: 100%;
@@ -21,8 +22,9 @@
     border-radius: 10px;
     border: 2px solid $white;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    height: 100%;
+    flex: 1 1 0;
     margin-left: auto;
     margin-right: auto;
     max-width: 61%;
@@ -127,6 +129,7 @@
     .offer-title-header {
         align-items: flex-end;
         display: flex;
+        margin-top: auto;
     }
     .rebate-details-wrap,
     .offer-price-text-description-wrap {
